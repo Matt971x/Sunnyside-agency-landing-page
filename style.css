@@ -1,0 +1,106 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: "Barlow", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+/* font-family: "Fraunces", serif; */
+/* font-weight: 700 or 900; */
+
+:root{
+--Soft-red: hsl(7, 99%, 70%);
+--Yellow: hsl(51, 100%, 49%);
+--Dark-desaturated-cyan /* (graphic design text) */: hsl(167, 40%, 24%);
+--Dark-blue /* (photography text) */: hsl(198, 62%, 26%);
+--Dark-moderate-cyan /* (footer) */: hsl(168, 34%, 41%);
+--Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+--Very-dark-grayish-blue: hsl(213, 9%, 39%);
+--Dark-grayish-blue: hsl(232, 10%, 55%);
+--Grayish-blue: hsl(210, 4%, 67%);
+--White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+}
+
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-weight: 400;
+}
+
+/* Header */
+header{
+    height: 100vh;
+    background-image: url('./images/desktop/image-header.jpg');
+    background-size: contain;
+    text-align: center;
+    color: var(--White);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.logo {
+    height: 2rem;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+.header-links a {
+    color: var(--White);
+}
+
+.header-links a:hover {
+    cursor: pointer;
+}
+
+.btn-contact {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: .95rem;
+    border: none;
+    text-transform: uppercase;
+    background: var(--White);
+    padding: 18px 30px;
+    border-radius: 30px;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.btn-contact:hover {
+    cursor: pointer;
+    background: #ffffff4e;
+    color: var(--White);
+}
+
+header h1 {
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 10px;
+    margin: 100px 0;
+}
