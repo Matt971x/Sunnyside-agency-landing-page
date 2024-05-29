@@ -41,7 +41,8 @@ a{
 header{
     height: 100vh;
     background-image: url('./images/desktop/image-header.jpg');
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     color: var(--White);
 }
@@ -104,3 +105,89 @@ header h1 {
     letter-spacing: 10px;
     margin: 100px 0;
 }
+
+/* MAIN SECTION */
+
+.section-flex {
+    display: flex;
+    height: 600px;
+}
+.text-part,.img-part {
+    width: 50%;
+}
+main :nth-child(2) {
+    flex-direction: row-reverse;
+}
+.section-flex .text-part {
+    padding:0 100px 0 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+}
+
+.section-flex .text-part h2 {
+    font-family: "Fraunces", serif;
+    font-weight: 900 ;
+    color: var(--Very-dark-desaturated-blue);
+    font-size:2.5rem;
+
+}
+.section-flex .text-part p{
+    color: var(--Dark-grayish-blue);
+    line-height: 1.5;
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+
+}
+
+.section-flex .text-part a{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--Very-dark-desaturated-blue);
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+
+}
+
+.section-flex .text-part a::before{
+    content: "";
+    position: absolute;
+    margin: 12px 0;
+    padding-right: 0px;
+    width: 125px;
+    background: #000;
+    height: 10px;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.section-flex .img-part {
+    background-image: url(./images/desktop/image-transform.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-flex:nth-child(2) .img-part {
+    background-image: url(./images/desktop/image-stand-out.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-flex .text-part .yellow-link::before{
+    background: var(--Yellow);
+} 
+.section-flex .text-part .red-link::before{
+    background: var(--Soft-red);
+} 
+
+.graphic-design {
+    background: url(./images/desktop/image-graphic-design.jpg)center/cover no-repeat;
+    width: 50%;
+}
+
+.photography {
+    background: url(./images/desktop/image-photography.jpg)center/cover no-repeat;
+    width: 50%;
+}
+
